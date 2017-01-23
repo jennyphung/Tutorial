@@ -3,6 +3,7 @@ title: "Rtutorial"
 output: html_document
 ---
 
+
 ## Introduction
 
 
@@ -45,9 +46,6 @@ knitr::kable(tmp)
 Apply my own function
 
 ```{r, echo=FALSE}
-myfunction <- function(inputvar, i, j){
-  sum(inputvar[1:2])
-}
 
 tmp = t(apply(firstrows, 2, myfunction))
 knitr::kable(tmp)
